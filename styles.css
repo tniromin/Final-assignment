@@ -55,7 +55,8 @@ div.desc {
 .responsive {
   padding: 0 6px 10px;
   float: left;
-  width: 24.99999%;
+  width: 49.999%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -69,12 +70,13 @@ div.gallery {
   }
 
   div.gallery img {
+    position: center;
     width: 100%;
     height: auto;
   }
 
   div.img_description {
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     font:
   }
