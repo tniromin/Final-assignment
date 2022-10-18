@@ -1,0 +1,35 @@
+<h1>My Basic Calculator</h1>
+
+<p>input 1: <input id="input1" size="5" /></p><br>
+
+<p>input 2: <input id="input2" size="5" /></p><br>
+
+<button id="add" onclick="myFunction('add')">+</button>
+
+<p>Answer:<input id="output1" size="5" /></p>
+
+<p id="idOne">
+<p id="idTwo">
+<p id="answer">
+
+</p>
+
+<script>
+
+    function myFunction(id) {
+        var num1 = document.getElementById("input1").value;
+        var num2 = document.getElementById("input2").value;
+        var result;
+
+
+        if (id == "add") {
+            result = Number(num1) + Number(num2);
+        }
+
+
+        document.getElementById("idOne").value = num1;
+        document.getElementById("idTwo").value = num2;
+        document.getElementById("output1").value = result;
+
+    }
+</script>

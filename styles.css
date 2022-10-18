@@ -16,140 +16,28 @@ ul.nav{
 li.nav{
     float:left;
 
-
 }
+ul.nav li a {
+  display: block;
 
-
-li a.Menu:hover{
-    background-color:rgb(91, 255, 200);
-    color:black;
-    border: 1px solid rgb(91, 255, 200);
-}
-
-/*Image gallery and some common responsive css*/
-div.gallery {
-  border: none;
-  padding: 0 6px 6px;
-}
-
-div.gallery:hover {
-  border: 1px solid #ccc;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 10px strong;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/*   Featured.html styles start*/
+/*ftr stands for feature */
+h2.ftr{
+  text-align: center;
+  color: rgb(0, 255, 0);
+  background-color:rgba(0, 0, 0, 0.15);
 }
 
-.responsive {
-  padding: 0 6px 10px;
-  float: left;
-  width: 49.999%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-}
-div.gallery {
-    border: 1px solid #ccc;
-  }
-
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-
-  div.gallery img {
-    position: center;
-    width: 100%;
-    height: auto;
-  }
-
-  div.img_description {
-    padding: 5px;
-    text-align: center;
-    font:
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-
-  .clearfix:after{
-    content:"";
-    display: table;
-    clear: both;
-  }
-  /*responsive elements*/
-  @media only screen and (max-width: 700px) {
-    ul.nav li.right,
-    ul.nav li {float: none;}
-
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0px 6px 0px;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    ul.nav li {border-right: none;}
-    .responsive {
-      width: 100%;
-    }
-}
-
-
-
-.signin{
-    background-color: rgb(67, 248, 188);
-    border: none;
-    color: black;
-    text-align: center;
-    float: right;
-    display: inline-block;
-    padding: 15px 16px;
-    text-decoration: none;
-    font-size: 20vm;
-    cursor: pointer;
-}
-.signin:hover{
-  background-color: rgb(67, 230, 188);
-}
-.Menu{
-    background-color: #333;
-    border: none;
+/*Border used to empahasize the hovering navigation*/
+li a.Menu:hover{
+    background-color:rgba(0, 0, 0, 0.5);
     color:white;
-    text-align: center;
-    display: inline-block;
-    padding: 15px 16px;
-    text-decoration: none;
-    font-size: 20pvm;
-    border-right: 1px solid #bbb;
-
-}
-.joinus{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 34vm;
-
+    border: 1px solid rgb(0, 0, 0,0.5);
 }
 
 .button{
@@ -170,6 +58,143 @@ div.gallery {
     background-color: rgba(0, 0, 0, 0.636);
 
 }
+
+.Menu{
+    background-color: #333;
+    border: none;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 20pvm;
+    border-right: 1px solid #bbb;
+
+}
+
+.signin{
+    background-color: rgb(67, 248, 188);
+    border: none;
+    color: black;
+    text-align: center;
+    float: right;
+    display: inline-block;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 20vm;
+    cursor: pointer;
+}
+.signin:hover{
+  background-color: rgb(67, 230, 188);
+}
+
+.Active{
+  background-color: rgb(64, 246, 204);
+  border: none;
+  color:black;
+  font-style: bold;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 20pvm;
+  border-right: 1px solid white ;
+  border-left: 1px solid white ;
+
+}
+
+/* Featured title*/
+h2.ftr{
+  text-align: center;
+  color: white ;
+}
+
+/*Image gallery and some common responsive css*/
+
+
+.responsive {
+  padding: 0 6px 10px;
+  float: left;
+  width: 49.999%;
+
+}
+
+
+
+div.gallery {
+  border: none;
+  padding: 0 6px 6px;
+  }
+
+/*Better to have no border when hovering*/
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    position: center;
+    width: 100%;
+    height: auto;
+  }
+
+  div.img_description {
+    /*padding: 5px;
+    text-align: center;*/
+    /*Need to bold*/
+    padding: 10px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    background-color:rgba(0, 0, 0, 0.2 5);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  .clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+  }
+  /*responsive elements*/
+  @media only screen and (max-width: 700px) {
+    a.signin{float:none;}
+    ul.nav li {float: none;}
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0px 6px 0px;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+    ul.nav li {border-right: none;}
+    .responsive {
+      width: 100%;
+    }
+}
+
+
+
+
+
+.joinus{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 34vm;
+
+}
+
+
 .center{
     text-align: center;
     color:aliceblue;
@@ -200,9 +225,27 @@ div.gallery {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+/*For Signin page*/
+/*sgin means sign in*/
+hr.sgin{
 
 
+}
 
+s_body{
+  background-color: black;
+
+}
+table{
+  width:100%;
+}
+td{
+  text-align: center;
+}
+th{
+  font-size:25px;
+  background-color: rgb(22 204 130);
+}
 
 
 

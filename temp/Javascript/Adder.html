@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>
+        Adder
+    </title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="icon_path" type="image/icon type">
+</head>
+
+<body>
+<form>
+  <h1>Calculator</h1>
+      <p><input type="text" id="N1"></p>
+      <p><input type="text" id="N2"></p>
+      <p id="answer">Answer:</p>
+      <button onclick="add()" >Delta</button>
+
+
+
+<!--    -----------------------------------     ------------End of Content-----------     ------------------------------------------------    -->
+    <script>
+    function  add(){
+
+      var N1=Number(document.getElementByID("N1").value);
+      var N2=Number(document.getElementByID("N2").value);
+      var result;
+      result=N1+N2;
+      document.getElementByID("answer").value=result;
+      document.getElementById("answer").value = result;
+
+
+    }
+
+    </script>
+
+</body>
+</html>
